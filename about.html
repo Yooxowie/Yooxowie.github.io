@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Dhany Shane Rose A. Siapno | A Creative Mind Between Hospitality and Technology</title>
+  <meta name="description" content="Discover Dhany Shane Rose A. Siapno's journey bridging Hospitality Management with Information Technology, front-end development, and creative innovation.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#0B2540">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://yooxowie.github.io/about.html">
+  <meta property="og:title" content="About Dhany Shane Rose A. Siapno">
+  <meta property="og:description" content="A Creative Mind Between Hospitality and Technology &bull; 4th-Year BSHM Senior exploring IT.">
+  <meta property="og:image" content="https://yooxowie.github.io/dhany-profile.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dreamy: {
+              navy: '#0B2540',
+              navydark: '#071727',
+              navybtn: '#0E2A47',
+              cyan: '#0284C7',
+              cyanlight: '#38BDF8',
+              cyansoft: '#E0F2FE',
+              cyanmint: '#D4F4F4',
+              gray: '#486581',
+              border: '#E2E8F0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F4F9FB] text-[#0B2540] antialiased selection:bg-sky-400 selection:text-white">
+
+  <!-- ==================== FLOATING HEADER & NAVIGATION ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-white/85 backdrop-blur-md border-b border-sky-100/70 transition-all">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo: ds✦ | PORTFOLIO · 2026 -->
+        <a href="index.html#hero" class="flex items-center space-x-2.5 group">
+          <span class="font-heading text-2xl font-extrabold tracking-tight text-[#0B2540] group-hover:text-sky-600 transition-colors">
+            ds<span class="text-sky-500 inline-block transform group-hover:rotate-45 transition-transform">✦</span>
+          </span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-slate-400 hidden sm:inline-block pl-2.5 border-l border-slate-200">
+            Portfolio &bull; 2026
+          </span>
+        </a>
+
+        <!-- Desktop Quick Links -->
+        <nav class="hidden md:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-[#334E68]">
+          <a href="index.html" class="hover:text-sky-600 transition-colors">Home</a>
+          <a href="about.html" class="text-sky-600 font-extrabold transition-colors border-b-2 border-sky-400 pb-0.5">About</a>
+          <a href="index.html#work" class="hover:text-sky-600 transition-colors">Case Studies</a>
+          <a href="index.html#simulator" class="hover:text-sky-600 transition-colors">Simulator</a>
+          <a href="index.html#credentials" class="hover:text-sky-600 transition-colors">Credentials</a>
+          <a href="cv.html" target="_blank" class="text-sky-600 hover:text-sky-700 transition-colors inline-flex items-center gap-1 font-extrabold">
+            Resume &nearr;
+          </a>
+        </nav>
+
+        <!-- Floating Circular Navy Menu Button -->
+        <button id="menu-toggle-btn" class="menu-circle-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== FULLSCREEN MENU DRAWER ==================== -->
+  <div id="menu-drawer">
+    <div class="flex items-center justify-between max-w-7xl w-full mx-auto">
+      <span class="font-heading text-3xl font-bold text-white">
+        ds<span class="text-sky-400">✦</span>
+      </span>
+      <button id="menu-close-btn" class="text-slate-300 hover:text-white p-2 text-2xl font-light" aria-label="Close Menu">
+        ✕
+      </button>
+    </div>
+
+    <!-- Center Navigation Links -->
+    <div class="max-w-7xl w-full mx-auto py-10 space-y-6">
+      <a href="index.html" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        HOME
+      </a>
+      <a href="about.html" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-sky-400 hover:text-white transition-colors">
+        ABOUT ME
+      </a>
+      <a href="index.html#work" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        CASE STUDIES
+      </a>
+      <a href="index.html#simulator" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        OPERATIONS SIMULATOR
+      </a>
+      <a href="index.html#credentials" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        ACADEMICS &amp; CERTIFICATIONS
+      </a>
+      <a href="cv.html" target="_blank" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-sky-300 hover:text-white transition-colors">
+        CURRICULUM VITAE &nearr;
+      </a>
+      <a href="#contact" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-sky-400 hover:text-white transition-colors">
+        LET'S WORK TOGETHER
+      </a>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="max-w-7xl w-full mx-auto flex flex-col sm:flex-row justify-between text-xs font-semibold text-slate-300 gap-4 pt-6 border-t border-slate-800">
+      <div>
+        <span class="block text-slate-400 uppercase tracking-widest text-[10px]">Direct Email</span>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-sky-400 transition-colors">zhuxieblahblah@gmail.com</a>
+      </div>
+      <div>
+        <span class="block text-slate-400 uppercase tracking-widest text-[10px]">LinkedIn</span>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-sky-400 transition-colors">linkedin.com/feed</a>
+      </div>
+      <div>
+        <span class="block text-slate-400 uppercase tracking-widest text-[10px]">GitHub</span>
+        <a href="https://github.com/Yooxowie" target="_blank" rel="noopener noreferrer" class="text-white hover:text-sky-400 transition-colors">github.com/Yooxowie</a>
+      </div>
+      <div>
+        <span class="block text-slate-400 uppercase tracking-widest text-[10px]">Location</span>
+        <span class="text-white">Philippines &bull; Open to Remote &amp; On-Site</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== ABOUT HERO BANNER ==================== -->
+  <section class="relative pt-36 pb-16 overflow-hidden">
+    
+    <!-- Top-Left & Bottom-Right Bow Accents -->
+    <div class="absolute top-4 left-4 w-48 sm:w-64 h-48 sm:h-64 pointer-events-none z-0 opacity-80 ribbon-sway-left">
+      <svg class="w-full h-full" viewBox="0 0 360 360" fill="none">
+        <path d="M-30 60 C 80 50, 160 140, 210 320" stroke="#7DD3FC" stroke-width="2" stroke-linecap="round" opacity="0.65"/>
+        <path d="M-20 100 C 90 90, 180 180, 230 360" stroke="#BAE6FD" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+        <g transform="translate(90, 95) rotate(-22)">
+          <path d="M -3 7 C -14 32, -26 68, -44 112 C -38 105, -28 99, -22 97 C -10 62, -2 32, 0 7 Z" fill="#7DD3FC" opacity="0.85"/>
+          <path d="M 3 7 C 14 35, 28 72, 40 118 C 32 108, 24 102, 18 98 C 10 65, 3 34, 0 7 Z" fill="#BAE6FD" opacity="0.9"/>
+          <path d="M -2 -1 C -20 -28, -55 -24, -64 -2 C -70 16, -45 25, -2 4 Z" fill="#BAE6FD"/>
+          <path d="M 2 -1 C 20 -28, 55 -24, 64 -2 C 70 16, 45 25, 2 4 Z" fill="#7DD3FC"/>
+          <ellipse cx="0" cy="2" rx="9" ry="7.5" fill="#38BDF8"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Sparkles -->
+    <div class="absolute top-28 right-20 text-sky-400 sparkle-twinkle pointer-events-none">
+      <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/>
+      </svg>
+    </div>
+    <div class="absolute top-44 left-1/4 text-sky-300 sparkle-twinkle-delay-2 pointer-events-none">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/>
+      </svg>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center relative z-10 space-y-4">
+      
+      <!-- Status Pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-sky-200 shadow-xs text-xs font-semibold text-[#0B2540]">
+        <span class="w-2.5 h-2.5 rounded-full bg-sky-500 animate-pulse"></span>
+        <span>4th Year Student &bull; B.S. in Hospitality Management</span>
+        <span class="text-sky-500 font-bold">✦</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-heading font-black text-[#0B2540] tracking-tight leading-tight">
+        A Creative Mind Between<br>
+        <span class="text-sky-600">Hospitality &amp; Technology</span>
+      </h1>
+
+      <!-- Slogan -->
+      <p class="font-cursive italic text-base sm:text-2xl text-[#026C80] font-semibold tracking-normal mt-2 flex items-center justify-center gap-2">
+        <span>&ldquo;HM heart, IT mind &mdash; creating experiences beyond expectations.&rdquo;</span>
+        <span class="text-xl sm:text-2xl not-italic font-bold" title="With heart">&#9825;</span>
+      </p>
+
+      <!-- Welcome Pill -->
+      <div class="pt-2">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-sky-100/70 border border-sky-200 text-xs font-bold uppercase tracking-wider text-sky-800">
+          Hello! Welcome to my little corner of the digital world! &bull; ᨳଓ
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PHOTO SHOWCASE (FORMAL PORTRAIT) ==================== -->
+  <section class="pb-16">
+    <div class="max-w-md mx-auto px-5 sm:px-8">
+      
+      <!-- Formal Graduation / Academic Portrait -->
+      <div class="editorial-card p-4 sm:p-5 group">
+        <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-slate-100 border border-sky-100 shadow-md">
+          <img 
+            src="dhany-profile.jpg" 
+            alt="Dhany Shane Rose A. Siapno - Formal Academic Portrait" 
+            class="w-full h-full object-cover object-top filter contrast-[1.02] group-hover:scale-105 transition duration-700"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B2540]/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <span class="inline-block px-3 py-1 rounded-full bg-[#0E2A47] text-white text-[10px] font-bold uppercase tracking-wider mb-1.5 border border-sky-300/40">
+              🎓 Formal &bull; 4th Year BSHM
+            </span>
+            <h3 class="text-xl font-heading font-bold text-white">Dhany Shane Rose A. Siapno</h3>
+            <p class="text-xs text-sky-200">TESDA NC II FBS &amp; NC II CSS Certified</p>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex items-center justify-between text-xs text-[#486581]">
+          <span class="font-semibold">Academic &amp; Professional Foundation</span>
+          <span class="font-mono-code text-sky-600 font-bold">Class of 2026</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== MAIN BIOGRAPHY & STORY CONTENT ==================== -->
+  <section class="py-16 bg-white border-t border-b border-sky-100">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 space-y-10">
+      
+      <!-- Introductory Greeting Banner -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-[#F4F9FB] border border-sky-100 text-center sm:text-left">
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold text-[#0B2540] mb-3">
+          Hello! Welcome to my little corner of the digital world!
+        </h2>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed">
+          I am a passionate and enthusiastic student pursuing my journey in <strong>Hospitality Management</strong>, with a growing appreciation for <strong>Information Technology</strong>, creativity, and digital innovation. I believe that learning is a continuous journey, and every experience gives us an opportunity to discover something new, develop our abilities, and become better versions of ourselves.
+        </p>
+      </div>
+
+      <!-- Chapter 1: The Heart of Hospitality -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center text-sm font-bold">
+            01
+          </span>
+          <h3 class="text-xl sm:text-2xl font-heading font-bold text-[#0B2540]">
+            The Art of Human Connection &amp; Hospitality
+          </h3>
+        </div>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed pl-1 sm:pl-11">
+          My interest in Hospitality Management comes from my appreciation for human connection, meaningful experiences, and the art of making people feel welcomed and valued. I find fulfillment in understanding people's needs, providing quality service, and creating memorable experiences through genuine care and attention to detail. For me, hospitality is more than simply serving guests; it is about building connections, showing kindness, communicating effectively, and making every interaction worthwhile.
+        </p>
+      </div>
+
+      <!-- Chapter 2: Discovering the World of IT -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center text-sm font-bold">
+            02
+          </span>
+          <h3 class="text-xl sm:text-2xl font-heading font-bold text-[#0B2540]">
+            Curiosity &amp; Innovation in Information Technology
+          </h3>
+        </div>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed pl-1 sm:pl-11">
+          On the other hand, my interest in Information Technology allows me to explore another side of creativity and innovation. I am fascinated by how technology continues to shape the way people communicate, work, learn, and experience the world. From exploring digital platforms to understanding how websites and technological tools work, I enjoy discovering how technology can simplify processes, improve efficiency, and create opportunities for growth.
+        </p>
+      </div>
+
+      <!-- Chapter 3: The Synergy of Both Worlds -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center text-sm font-bold">
+            03
+          </span>
+          <h3 class="text-xl sm:text-2xl font-heading font-bold text-[#0B2540]">
+            Bridging Two Complementary Disciplines
+          </h3>
+        </div>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed pl-1 sm:pl-11">
+          Although Hospitality Management and Information Technology may seem like two different fields, I see them as complementary disciplines. Hospitality focuses on people and the experiences we create, while technology provides innovative ways to improve and enhance those experiences. I believe that combining these two areas opens up endless possibilities, especially in today's increasingly digital world. From modern hotel management systems and online reservations to digital marketing and innovative guest services, technology plays an important role in shaping the future of the hospitality industry.
+        </p>
+      </div>
+
+      <!-- HIGHLIGHTED QUOTE CALLOUT BOX -->
+      <div class="my-8 p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-sky-50 via-cyan-50 to-sky-100 border-2 border-sky-200 text-center relative shadow-sm">
+        <div class="text-sky-400 text-4xl font-serif mb-2">&ldquo;</div>
+        <blockquote class="text-lg sm:text-2xl font-heading font-extrabold text-[#0B2540] leading-snug max-w-2xl mx-auto">
+          &ldquo;Because for me, hospitality is about creating experiences, while technology is about creating possibilities. And when the two come together, innovation becomes more meaningful.&rdquo;
+        </blockquote>
+        <div class="mt-4 text-xs font-bold uppercase tracking-widest text-sky-700">
+          &mdash; Dhany Shane Rose A. Siapno
+        </div>
+      </div>
+
+      <!-- Chapter 4: Academic Journey & Essential Skills -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center text-sm font-bold">
+            04
+          </span>
+          <h3 class="text-xl sm:text-2xl font-heading font-bold text-[#0B2540]">
+            Essential Skills &amp; Collaborative Learning
+          </h3>
+        </div>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed pl-1 sm:pl-11">
+          Throughout my academic journey, I have continued to develop essential skills such as communication, teamwork, organization, problem-solving, creativity, adaptability, and time management. I also value collaboration, as I believe that working with different people allows me to gain new perspectives, exchange ideas, and learn beyond what can be found in textbooks.
+        </p>
+      </div>
+
+      <!-- Chapter 5: Passions Outside Academics -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center text-sm font-bold">
+            05
+          </span>
+          <h3 class="text-xl sm:text-2xl font-heading font-bold text-[#0B2540]">
+            Curiosity &amp; Growth Outside the Classroom
+          </h3>
+        </div>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed pl-1 sm:pl-11">
+          Outside academics, I enjoy exploring creative ideas, learning new digital skills, discovering inspiring things, and expressing myself through different forms of creativity. I appreciate opportunities that challenge me to step outside my comfort zone, improve my confidence, and discover what I am capable of achieving.
+        </p>
+      </div>
+
+      <!-- Chapter 6: Aspirations & Moving Forward -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center text-sm font-bold">
+            06
+          </span>
+          <h3 class="text-xl sm:text-2xl font-heading font-bold text-[#0B2540]">
+            Aspiring to Bring Together the Best of Both Worlds
+          </h3>
+        </div>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed pl-1 sm:pl-11">
+          As I continue to grow, I aspire to become someone who can bring together the best of both worlds: the warmth and personal touch of hospitality and the creativity and innovation of technology. Whether it is creating exceptional guest experiences, exploring digital solutions, or developing ideas that make everyday tasks more convenient, I hope to use my knowledge and skills to make a positive impact.
+        </p>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed pl-1 sm:pl-11">
+          I understand that there is still so much to learn and experience, but I am excited about the opportunities ahead. I believe that success is not only measured by achievements but also by the lessons we learn, the people we meet, the challenges we overcome, and the passion we put into everything we do.
+        </p>
+        <p class="text-sm sm:text-base text-[#334E68] leading-relaxed pl-1 sm:pl-11">
+          This website serves as a reflection of my interests, learning experiences, creativity, and personal growth. It represents my journey of exploring two different yet interconnected fields and discovering how they can work together to create something meaningful.
+        </p>
+      </div>
+
+      <!-- Thank You Sign-Off Box -->
+      <div class="p-8 rounded-2xl bg-[#F4F9FB] border border-sky-200 text-center space-y-3">
+        <p class="text-base sm:text-lg font-cursive italic text-[#026C80] font-semibold">
+          Thank you for taking the time to visit my website. I hope you enjoy exploring my little digital space!
+        </p>
+        <div class="text-xl sm:text-2xl font-heading font-bold text-sky-600 tracking-wider">
+          &mdash; ᨳଓ .
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS & CREDENTIALS SNAPSHOT ==================== -->
+  <section class="py-20 bg-[#F4F9FB]">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="kicker-tag justify-center">
+          <span class="kicker-square"></span>
+          <span>DUAL CAPABILITIES</span>
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-heading font-black text-[#0B2540] mt-3 title-underline-accent">
+          HOW I BRIDGE BOTH WORLDS
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Pillar 1 -->
+        <div class="editorial-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg font-bold mb-4">
+              🍽️
+            </div>
+            <h4 class="font-heading font-bold text-base text-[#0B2540] mb-2">Hospitality Heart</h4>
+            <p class="text-xs text-[#486581] leading-relaxed mb-4">
+              TESDA NC II FBS certified. Dining room service, table setup etiquette, banquet leadership, VIP guest empathy, and food hygiene standards.
+            </p>
+          </div>
+          <span class="text-[11px] font-bold text-sky-700">NC II FBS Certified</span>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="editorial-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg font-bold mb-4">
+              💻
+            </div>
+            <h4 class="font-heading font-bold text-base text-[#0B2540] mb-2">IT Mind &amp; Systems</h4>
+            <p class="text-xs text-[#486581] leading-relaxed mb-4">
+              TESDA NC II CSS certified. PC assembly &amp; diagnostics, OS setup, network configuration, and front-end coding with HTML5, CSS3, &amp; JavaScript.
+            </p>
+          </div>
+          <span class="text-[11px] font-bold text-sky-700">NC II CSS Certified</span>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="editorial-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg font-bold mb-4">
+              ✨
+            </div>
+            <h4 class="font-heading font-bold text-base text-[#0B2540] mb-2">Creative Innovation</h4>
+            <p class="text-xs text-[#486581] leading-relaxed mb-4">
+              Designing intuitive digital interfaces, automating operations calculations, and enhancing hotel guest satisfaction with technology.
+            </p>
+          </div>
+          <span class="text-[11px] font-bold text-sky-700">UI/UX &amp; CX Prototyping</span>
+        </div>
+
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="mt-12 flex flex-wrap justify-center gap-4">
+        <a href="index.html#work" class="px-6 py-3 rounded-full bg-[#0E2A47] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#071727] shadow-md transition-all">
+          Explore Case Studies &rarr;
+        </a>
+        <a href="cv.html" target="_blank" class="px-6 py-3 rounded-full bg-white border border-[#38BDF8] text-[#0B2540] text-xs font-bold uppercase tracking-wider hover:bg-sky-50 shadow-xs transition-all">
+          View Curriculum Vitae &nearr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer id="contact" class="bg-[#071727] text-white py-20 border-t border-sky-900/40">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between pb-16 border-b border-slate-800 gap-8">
+        <div>
+          <span class="text-xs font-mono-code font-bold uppercase tracking-widest text-sky-400 block mb-2">
+            START A CONVERSATION
+          </span>
+          <h2 class="text-4xl sm:text-6xl font-heading font-black tracking-tight text-white">
+            LET'S WORK TOGETHER
+          </h2>
+          <p class="text-sm text-slate-400 mt-2 max-w-lg">
+            Open to hotel internships, hospitality tech roles, web development collaboration, and guest experience projects.
+          </p>
+        </div>
+
+        <a 
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-16 h-16 rounded-full bg-sky-400 hover:bg-sky-300 text-[#071727] flex items-center justify-center text-2xl shadow-lg shadow-sky-400/30 transform hover:scale-110 transition-all shrink-0"
+          title="Compose Email in Gmail"
+        >
+          ✉
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 py-12 border-b border-slate-800 text-xs">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center space-x-2">
+            <span class="font-heading text-2xl font-bold text-white">
+              ds<span class="text-sky-400">✦</span>
+            </span>
+            <span class="text-slate-400 font-semibold tracking-wider uppercase text-[11px]">
+              &bull; Dhany Shane Rose A. Siapno
+            </span>
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-sm">
+            4th-Year Hospitality Management Senior exploring front-end web tools and computer systems servicing.
+          </p>
+          <div class="pt-2">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" target="_blank" rel="noopener noreferrer" class="text-sm sm:text-base font-bold text-sky-300 hover:text-white underline transition-colors">
+              zhuxieblahblah@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold uppercase tracking-wider text-slate-300">Menu</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-sky-400 font-bold hover:text-white transition-colors">About Dhany &nearr;</a></li>
+            <li><a href="index.html#work" class="hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="index.html#simulator" class="hover:text-white transition-colors">Operations Simulator</a></li>
+            <li><a href="index.html#credentials" class="hover:text-white transition-colors">Credentials</a></li>
+            <li><a href="cv.html" target="_blank" class="hover:text-white text-sky-400 font-semibold transition-colors">Curriculum Vitae &nearr;</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-5">
+          <div>
+            <h4 class="font-heading font-bold uppercase tracking-wider text-slate-300 mb-2">Connect</h4>
+            <ul class="space-y-1.5 text-slate-400">
+              <li>
+                <a href="https://github.com/Yooxowie" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+                  <span>GitHub &bull; Yooxowie</span>
+                  <span class="text-sky-400 text-xs">&nearr;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+                  <span>LinkedIn Feed / Profile</span>
+                  <span class="text-sky-400 text-xs">&nearr;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+                  <span>zhuxieblahblah@gmail.com</span>
+                  <span class="text-sky-400 text-xs">&nearr;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Philippine Time (PHT)</span>
+            </div>
+            <div id="live-pht-clock" class="font-mono-code text-xl font-bold text-sky-400">
+              --:--:-- PM PHT
+            </div>
+            <span class="text-[10px] text-slate-400 block mt-0.5">Manila, Philippines (GMT+8)</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-3">
+        <div>
+          &copy; <span id="current-year">2026</span> Dhany Shane Rose A. Siapno. All rights reserved.
+        </div>
+        <div class="text-center sm:text-right font-cursive italic text-sky-300 text-xs">
+          HM heart, IT mind &mdash; creating experiences beyond expectations. &#9825;
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lucide Init & Year -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhany Shane Rose A. Siapno | Portfolio</title>
+  <meta name="description" content="Official portfolio of Dhany Shane Rose A. Siapno — 4th-Year Hospitality Management Student exploring Information Technology, web tools, and operations automation. Dual certified in TESDA NC II FBS and NC II CSS.">
+  <meta name="author" content="Dhany Shane Rose A. Siapno">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#0B2540">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yooxowie.github.io/">
+  <meta property="og:title" content="Dhany Shane Rose A. Siapno | Hospitality & Tech Portfolio">
+  <meta property="og:description" content="HM heart, IT mind — creating experiences beyond expectations. 4th-Year BSHM Senior exploring the IT world.">
+  <meta property="og:image" content="https://yooxowie.github.io/dhany-profile.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dreamy: {
+              navy: '#0B2540',
+              navydark: '#071727',
+              navybtn: '#0E2A47',
+              cyan: '#0284C7',
+              cyanlight: '#38BDF8',
+              cyansoft: '#E0F2FE',
+              cyanmint: '#D4F4F4',
+              gray: '#486581',
+              border: '#E2E8F0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F4F9FB] text-[#0B2540] antialiased selection:bg-sky-400 selection:text-white">
+
+  <!-- ==================== INTRO SCREEN ("HM heart, IT mind") ==================== -->
+  <div id="intro-curtain" title="Click anywhere to skip">
+    <div class="text-center px-4 max-w-2xl">
+      <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-400 mb-4 animate-pulse">
+        ✦
+      </div>
+      <h1 class="intro-text font-heading">
+        HM heart, IT mind<br>
+        <span class="text-sky-300 font-normal text-sm sm:text-lg tracking-normal block mt-2 font-cursive italic">
+          &mdash; creating experiences beyond expectations. &#9825;
+        </span>
+      </h1>
+      <span class="text-[11px] uppercase tracking-widest text-sky-200/60 block mt-6">Click to enter &rarr;</span>
+    </div>
+  </div>
+
+  <!-- ==================== FLOATING HEADER & NAVIGATION ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-white/85 backdrop-blur-md border-b border-sky-100/70 transition-all">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo: ds✦ | PORTFOLIO · 2026 -->
+        <a href="#hero" class="flex items-center space-x-2.5 group">
+          <span class="font-heading text-2xl font-extrabold tracking-tight text-[#0B2540] group-hover:text-sky-600 transition-colors">
+            ds<span class="text-sky-500 inline-block transform group-hover:rotate-45 transition-transform">✦</span>
+          </span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-slate-400 hidden sm:inline-block pl-2.5 border-l border-slate-200">
+            Portfolio &bull; 2026
+          </span>
+        </a>
+
+        <!-- Desktop Quick Links: ABOUT (separate page), CASE STUDIES, SIMULATOR, CREDENTIALS, TESTIMONIALS, RESUME ↗ -->
+        <nav class="hidden md:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-[#334E68]">
+          <a href="about.html" class="hover:text-sky-600 transition-colors">About</a>
+          <a href="#work" class="hover:text-sky-600 transition-colors">Case Studies</a>
+          <a href="#simulator" class="hover:text-sky-600 transition-colors">Simulator</a>
+          <a href="#credentials" class="hover:text-sky-600 transition-colors">Credentials</a>
+          <a href="#testimonials" class="hover:text-sky-600 transition-colors">Testimonials</a>
+          <a href="cv.html" target="_blank" class="text-sky-600 hover:text-sky-700 transition-colors inline-flex items-center gap-1 font-extrabold">
+            Resume &nearr;
+          </a>
+        </nav>
+
+        <!-- Floating Circular Navy Menu Button -->
+        <button id="menu-toggle-btn" class="menu-circle-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== FULLSCREEN MENU DRAWER ==================== -->
+  <div id="menu-drawer">
+    <div class="flex items-center justify-between max-w-7xl w-full mx-auto">
+      <span class="font-heading text-3xl font-bold text-white">
+        ds<span class="text-sky-400">✦</span>
+      </span>
+      <button id="menu-close-btn" class="text-slate-300 hover:text-white p-2 text-2xl font-light" aria-label="Close Menu">
+        ✕
+      </button>
+    </div>
+
+    <!-- Center Navigation Links -->
+    <div class="max-w-7xl w-full mx-auto py-10 space-y-6">
+      <a href="about.html" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        ABOUT ME &nearr;
+      </a>
+      <a href="#work" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        CASE STUDIES
+      </a>
+      <a href="#simulator" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        OPERATIONS SIMULATOR
+      </a>
+      <a href="#credentials" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        ACADEMICS &amp; CERTIFICATIONS
+      </a>
+      <a href="#testimonials" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-white hover:text-sky-400 transition-colors">
+        TESTIMONIALS
+      </a>
+      <a href="cv.html" target="_blank" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-sky-300 hover:text-white transition-colors">
+        CURRICULUM VITAE &nearr;
+      </a>
+      <a href="#contact" class="drawer-link block text-3xl sm:text-5xl font-heading font-extrabold text-sky-400 hover:text-white transition-colors">
+        LET'S WORK TOGETHER
+      </a>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="max-w-7xl w-full mx-auto flex flex-col sm:flex-row justify-between text-xs font-semibold text-slate-300 gap-4 pt-6 border-t border-slate-800">
+      <div>
+        <span class="block text-slate-400 uppercase tracking-widest text-[10px]">Direct Email</span>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-sky-400 transition-colors">zhuxieblahblah@gmail.com</a>
+      </div>
+      <div>
+        <span class="block text-slate-400 uppercase tracking-widest text-[10px]">LinkedIn</span>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-sky-400 transition-colors">linkedin.com/feed</a>
+      </div>
+      <div>
+        <span class="block text-slate-400 uppercase tracking-widest text-[10px]">GitHub</span>
+        <a href="https://github.com/Yooxowie" target="_blank" rel="noopener noreferrer" class="text-white hover:text-sky-400 transition-colors">github.com/Yooxowie</a>
+      </div>
+      <div>
+        <span class="block text-slate-400 uppercase tracking-widest text-[10px]">Location</span>
+        <span class="text-white">Philippines &bull; Open to Remote &amp; On-Site</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HERO SECTION (REFINED SILK BOWS, NO CROWN, MATCHES MOCKUP) ==================== -->
+  <section id="hero" class="relative min-h-[96vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
+    
+    <!-- ==================== BACKGROUND DECORATIVE ELEMENTS ==================== -->
+    
+    <!-- 1. Top-Left Silk Bow & Graceful Streamers (Refined Realistic Satin Bow) -->
+    <div class="absolute top-2 left-2 sm:top-4 sm:left-4 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 pointer-events-none z-0 ribbon-sway-left">
+      <svg class="w-full h-full" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="silkGradLeft1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E0F2FE"/>
+            <stop offset="35%" stop-color="#BAE6FD"/>
+            <stop offset="75%" stop-color="#7DD3FC"/>
+            <stop offset="100%" stop-color="#38BDF8"/>
+          </linearGradient>
+          <linearGradient id="silkGradLeft2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#E0F2FE"/>
+            <stop offset="35%" stop-color="#BAE6FD"/>
+            <stop offset="75%" stop-color="#7DD3FC"/>
+            <stop offset="100%" stop-color="#38BDF8"/>
+          </linearGradient>
+          <linearGradient id="silkShadowLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7DD3FC"/>
+            <stop offset="100%" stop-color="#0284C7"/>
+          </linearGradient>
+          <filter id="ribbonGlowLeft" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.32"/>
+          </filter>
+        </defs>
+
+        <!-- Long Wavy Streamer Lines traversing from top-left -->
+        <path d="M-30 60 C 80 50, 160 140, 210 320" stroke="#7DD3FC" stroke-width="2.2" stroke-linecap="round" opacity="0.68"/>
+        <path d="M-20 100 C 90 90, 180 180, 230 360" stroke="#BAE6FD" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+        <path d="M 0 30 C 90 20, 140 80, 170 200" stroke="#E0F2FE" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>
+
+        <!-- Silk Bow Center & Loops -->
+        <g transform="translate(90, 95) rotate(-22)" filter="url(#ribbonGlowLeft)">
+          <!-- Left Tail -->
+          <path d="M -3 7 C -14 32, -26 68, -44 112 C -38 105, -28 99, -22 97 C -10 62, -2 32, 0 7 Z" fill="url(#silkGradLeft1)" opacity="0.95"/>
+          <path d="M -44 112 C -40 107, -32 102, -22 97" stroke="#0284C7" stroke-width="0.8" opacity="0.4" fill="none"/>
+          
+          <!-- Right Tail -->
+          <path d="M 3 7 C 14 35, 28 72, 40 118 C 32 108, 24 102, 18 98 C 10 65, 3 34, 0 7 Z" fill="url(#silkGradLeft2)" opacity="0.95"/>
+          <path d="M 40 118 C 34 110, 26 104, 18 98" stroke="#0284C7" stroke-width="0.8" opacity="0.4" fill="none"/>
+
+          <!-- Left Bow Loop (Outer + Inner depth fold) -->
+          <path d="M -2 -1 C -20 -28, -55 -24, -64 -2 C -70 16, -45 25, -2 4 Z" fill="url(#silkGradLeft1)"/>
+          <path d="M -5 -1 C -20 -18, -44 -16, -50 -1 C -54 11, -38 16, -5 3 Z" fill="url(#silkShadowLeft)" opacity="0.28"/>
+          <path d="M -2 -1 C -20 -28, -55 -24, -64 -2 C -70 16, -45 25, -2 4 Z" stroke="#38BDF8" stroke-width="1" fill="none" opacity="0.6"/>
+
+          <!-- Right Bow Loop (Outer + Inner depth fold) -->
+          <path d="M 2 -1 C 20 -28, 55 -24, 64 -2 C 70 16, 45 25, 2 4 Z" fill="url(#silkGradLeft2)"/>
+          <path d="M 5 -1 C 20 -18, 44 -16, 50 -1 C 54 11, 38 16, 5 3 Z" fill="url(#silkShadowLeft)" opacity="0.28"/>
+          <path d="M 2 -1 C 20 -28, 55 -24, 64 -2 C 70 16, 45 25, 2 4 Z" stroke="#38BDF8" stroke-width="1" fill="none" opacity="0.6"/>
+
+          <!-- Center Wrapped Knot -->
+          <ellipse cx="0" cy="2" rx="9" ry="7.5" fill="url(#silkGradLeft1)"/>
+          <ellipse cx="0" cy="2" rx="9" ry="7.5" stroke="#38BDF8" stroke-width="1.2" fill="none" opacity="0.8"/>
+          <path d="M -5 0 Q 0 4, 5 0" stroke="#0284C7" stroke-width="1" fill="none" opacity="0.5"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- 2. Bottom-Right Silk Bow & Graceful Streamers (Refined Realistic Satin Bow) -->
+    <div class="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 pointer-events-none z-0 ribbon-sway-right">
+      <svg class="w-full h-full" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="silkGradRight1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E0F2FE"/>
+            <stop offset="35%" stop-color="#BAE6FD"/>
+            <stop offset="75%" stop-color="#7DD3FC"/>
+            <stop offset="100%" stop-color="#38BDF8"/>
+          </linearGradient>
+          <linearGradient id="silkGradRight2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#E0F2FE"/>
+            <stop offset="35%" stop-color="#BAE6FD"/>
+            <stop offset="75%" stop-color="#7DD3FC"/>
+            <stop offset="100%" stop-color="#38BDF8"/>
+          </linearGradient>
+          <linearGradient id="silkShadowRight" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7DD3FC"/>
+            <stop offset="100%" stop-color="#0284C7"/>
+          </linearGradient>
+          <filter id="ribbonGlowRight" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.32"/>
+          </filter>
+        </defs>
+
+        <!-- Long Wavy Streamer Lines traversing upwards from bottom-right -->
+        <path d="M 380 280 C 270 260, 190 180, 170 40" stroke="#7DD3FC" stroke-width="2.2" stroke-linecap="round" opacity="0.68"/>
+        <path d="M 380 250 C 250 225, 150 150, 130 -10" stroke="#BAE6FD" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+        <path d="M 370 210 C 230 190, 120 100, 90 -50" stroke="#E0F2FE" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>
+
+        <!-- Silk Bow Center & Loops -->
+        <g transform="translate(265, 260) rotate(155)" filter="url(#ribbonGlowRight)">
+          <!-- Left Tail -->
+          <path d="M -3 7 C -14 32, -26 68, -44 112 C -38 105, -28 99, -22 97 C -10 62, -2 32, 0 7 Z" fill="url(#silkGradRight1)" opacity="0.95"/>
+          <path d="M -44 112 C -40 107, -32 102, -22 97" stroke="#0284C7" stroke-width="0.8" opacity="0.4" fill="none"/>
+          
+          <!-- Right Tail -->
+          <path d="M 3 7 C 14 35, 28 72, 40 118 C 32 108, 24 102, 18 98 C 10 65, 3 34, 0 7 Z" fill="url(#silkGradRight2)" opacity="0.95"/>
+          <path d="M 40 118 C 34 110, 26 104, 18 98" stroke="#0284C7" stroke-width="0.8" opacity="0.4" fill="none"/>
+
+          <!-- Left Bow Loop -->
+          <path d="M -2 -1 C -20 -28, -55 -24, -64 -2 C -70 16, -45 25, -2 4 Z" fill="url(#silkGradRight1)"/>
+          <path d="M -5 -1 C -20 -18, -44 -16, -50 -1 C -54 11, -38 16, -5 3 Z" fill="url(#silkShadowRight)" opacity="0.28"/>
+          <path d="M -2 -1 C -20 -28, -55 -24, -64 -2 C -70 16, -45 25, -2 4 Z" stroke="#38BDF8" stroke-width="1" fill="none" opacity="0.6"/>
+
+          <!-- Right Bow Loop -->
+          <path d="M 2 -1 C 20 -28, 55 -24, 64 -2 C 70 16, 45 25, 2 4 Z" fill="url(#silkGradRight2)"/>
+          <path d="M 5 -1 C 20 -18, 44 -16, 50 -1 C 54 11, 38 16, 5 3 Z" fill="url(#silkShadowRight)" opacity="0.28"/>
+          <path d="M 2 -1 C 20 -28, 55 -24, 64 -2 C 70 16, 45 25, 2 4 Z" stroke="#38BDF8" stroke-width="1" fill="none" opacity="0.6"/>
+
+          <!-- Center Wrapped Knot -->
+          <ellipse cx="0" cy="2" rx="9" ry="7.5" fill="url(#silkGradRight1)"/>
+          <ellipse cx="0" cy="2" rx="9" ry="7.5" stroke="#38BDF8" stroke-width="1.2" fill="none" opacity="0.8"/>
+          <path d="M -5 0 Q 0 4, 5 0" stroke="#0284C7" stroke-width="1" fill="none" opacity="0.5"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- 3. Scattered 4-Pointed Sparkle Stars (✦) -->
+    <div class="absolute top-28 left-16 sm:left-24 text-sky-400 sparkle-twinkle pointer-events-none z-0">
+      <svg class="w-6 h-6 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/>
+      </svg>
+    </div>
+    <div class="absolute top-1/2 left-8 sm:left-14 text-sky-400/90 sparkle-twinkle-delay-1 pointer-events-none z-0">
+      <svg class="w-5 h-5 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/>
+      </svg>
+    </div>
+    <div class="absolute bottom-20 left-12 sm:left-28 text-sky-400 sparkle-twinkle-delay-2 pointer-events-none z-0">
+      <svg class="w-6 h-6 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/>
+      </svg>
+    </div>
+    <div class="absolute top-16 right-1/4 text-sky-400 sparkle-twinkle-delay-3 pointer-events-none z-0">
+      <svg class="w-5 h-5 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/>
+      </svg>
+    </div>
+    <div class="absolute top-1/3 right-10 sm:right-16 text-sky-400 sparkle-twinkle pointer-events-none z-0">
+      <svg class="w-6 h-6 sm:w-9 sm:h-9" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/>
+      </svg>
+    </div>
+    <div class="absolute bottom-24 right-20 sm:right-32 text-sky-400 sparkle-twinkle-delay-1 pointer-events-none z-0">
+      <svg class="w-6 h-6 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"/>
+      </svg>
+    </div>
+
+    <!-- ==================== MAIN HERO CONTENT WRAPPER ==================== -->
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center relative z-10 space-y-5 sm:space-y-6">
+      
+      <!-- 1. Student Status Pill (● 4th Year Student · B.S. in Hospitality Management ✦) -->
+      <div>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 border border-sky-200/90 shadow-xs text-xs font-semibold text-[#0B2540]">
+          <span class="w-2.5 h-2.5 rounded-full bg-sky-500 animate-pulse"></span>
+          <span>4th Year Student &bull; B.S. in Hospitality Management</span>
+          <span class="text-sky-500 font-bold">✦</span>
+        </div>
+      </div>
+
+      <!-- 2. Giant Bold Title with Celestial Orbiting Halo (NO CROWN) -->
+      <div class="relative inline-block my-2 sm:my-3">
+        
+        <!-- Glowing Orbiting Ring SVG (Encircling DHANY SHANE with 4-point star on right rim) -->
+        <div class="absolute inset-0 -m-8 sm:-m-16 flex items-center justify-center pointer-events-none z-0">
+          <svg class="w-[340px] sm:w-[650px] md:w-[760px] h-[190px] sm:h-[260px] md:h-[290px] overflow-visible orbit-ring" viewBox="0 0 760 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="380" cy="140" rx="340" ry="85" transform="rotate(-11 380 140)" stroke="url(#ringGradient)" stroke-width="4.5" stroke-linecap="round" opacity="0.85"/>
+            <ellipse cx="380" cy="140" rx="338" ry="83" transform="rotate(-11 380 140)" stroke="#E0F2FE" stroke-width="2" opacity="0.6"/>
+            
+            <!-- 4-pointed Star Sparkle sitting on the right edge of the ring -->
+            <g transform="translate(685, 80) rotate(10)">
+              <path d="M12 0 L15 9 L24 12 L15 15 L12 24 L9 15 L0 12 L9 9 Z" fill="#38BDF8"/>
+              <circle cx="12" cy="12" r="3" fill="#FFFFFF"/>
+            </g>
+
+            <defs>
+              <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3"/>
+                <stop offset="30%" stop-color="#7DD3FC" stop-opacity="0.75"/>
+                <stop offset="70%" stop-color="#0284C7" stop-opacity="0.95"/>
+                <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Title Typography: DHANY SHANE (Extra-wide bold blocky sans-serif in deep navy) -->
+        <h1 class="relative z-10 font-heading text-4xl sm:text-6xl md:text-7xl lg:text-[84px] font-black tracking-tight text-[#0B2540] leading-[0.93] select-none">
+          <div class="block">DHANY</div>
+          <div class="block">SHANE</div>
+        </h1>
+      </div>
+
+      <!-- 3. Cursive Slogan with Heart Doodle: “HM heart, IT mind — creating experiences beyond expectations.” ♡ -->
+      <p class="font-cursive italic text-base sm:text-2xl md:text-[25px] text-[#026C80] font-semibold tracking-normal mt-2 sm:mt-3 mb-2 flex items-center justify-center gap-2 flex-wrap">
+        <span>&ldquo;HM heart, IT mind &mdash; creating experiences beyond expectations.&rdquo;</span>
+        <span class="inline-block text-[#026C80] font-bold not-italic text-xl sm:text-2xl transform hover:scale-125 transition-transform cursor-pointer" title="With heart">&#9825;</span>
+      </p>
+
+      <!-- 4. Bio Pitch Paragraph -->
+      <p class="max-w-2xl mx-auto text-sm sm:text-base text-[#334E68] font-normal leading-relaxed">
+        I am currently a <strong class="font-bold text-[#0B2540]">4th-year Hospitality Management student</strong> actively exploring the world of information technology. Dual certified in <strong class="font-bold text-[#0B2540]">TESDA NC II FBS</strong> and <strong class="font-bold text-[#0B2540]">NC II CSS</strong>. I bridge real guest service with front-end web tools.
+      </p>
+
+      <!-- 5. Centered Badges Strip -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 pt-2">
+        <span class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-white border border-[#CBD5E1] text-xs font-semibold text-[#0B2540] shadow-xs hover:border-sky-300 transition-colors">
+          <svg class="w-4 h-4 text-[#0284C7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v2m-8 12h16m-16 0a8 8 0 0116 0H4z"/>
+          </svg>
+          <span>NC II: Food &amp; Beverage Services (FBS)</span>
+        </span>
+
+        <span class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-white border border-[#CBD5E1] text-xs font-semibold text-[#0B2540] shadow-xs hover:border-sky-300 transition-colors">
+          <svg class="w-4 h-4 text-[#0284C7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          <span>NC II: Computer Systems Servicing (CSS)</span>
+        </span>
+
+        <span class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-[#D4F4F4] border border-[#A2E5E4] text-xs font-semibold text-[#0C5A60] shadow-xs">
+          <svg class="w-4 h-4 text-[#0E7490]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+          </svg>
+          <span>Exploring Web &amp; IT</span>
+        </span>
+      </div>
+
+      <!-- 6. Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 pt-3">
+        <a href="#work" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0E2A47] hover:bg-[#081C30] text-white text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all">
+          <span>EXPLORE CASE STUDIES</span>
+          <span class="text-sm">&rarr;</span>
+        </a>
+
+        <a href="cv.html" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-sky-50 text-[#0E2A47] border border-[#38BDF8] text-xs font-bold uppercase tracking-wider shadow-xs hover:shadow-sm transform hover:-translate-y-0.5 transition-all">
+          <span>VIEW CV / RESUME</span>
+          <svg class="w-4 h-4 text-[#0284C7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-sky-50 text-[#0E2A47] border border-[#38BDF8] text-xs font-bold uppercase tracking-wider shadow-xs hover:shadow-sm transform hover:-translate-y-0.5 transition-all" title="Open Gmail Compose">
+          <span>GET IN TOUCH</span>
+          <svg class="w-4 h-4 text-[#0284C7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SUMMARY SECTION (WITH LINK TO SEPARATE PAGE) ==================== -->
+  <section id="about" class="py-20 bg-white border-t border-b border-sky-100">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="kicker-tag justify-center">
+          <span class="kicker-square"></span>
+          <span>PROFILE &amp; STORY</span>
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-black text-[#0B2540] mt-3 title-underline-accent">
+          ABOUT DHANY SHANE
+        </h2>
+        <p class="text-sm text-[#486581] mt-5 leading-relaxed">
+          A Creative Mind Between Hospitality and Technology &bull; 4th-Year BSHM Senior exploring the IT world.
+        </p>
+      </div>
+
+      <!-- 2-Column Profile Layout: Photo Card & Biography -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Column: Portrait Photo Card with Badges -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative group max-w-sm w-full">
+            <div class="absolute -inset-2 bg-gradient-to-r from-sky-300 via-cyan-200 to-sky-400 rounded-3xl blur-xl opacity-40 group-hover:opacity-70 transition duration-500"></div>
+
+            <div class="relative bg-white p-3 rounded-2xl shadow-xl border border-sky-100 overflow-hidden">
+              <div class="aspect-[4/5] rounded-xl overflow-hidden bg-slate-100 relative">
+                <img 
+                  src="dhany-profile.jpg" 
+                  alt="Dhany Shane Rose A. Siapno" 
+                  class="w-full h-full object-cover object-top filter contrast-[1.02] group-hover:scale-105 transition duration-700"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0B2540]/70 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500 text-[10px] font-bold uppercase tracking-wider mb-1">
+                    Graduating Class of 2026
+                  </span>
+                  <h3 class="text-lg font-heading font-bold text-white">Dhany Shane Rose A. Siapno</h3>
+                  <p class="text-xs text-sky-100">4th-Year BSHM &bull; Dual NC II Certified</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Story Teaser & Link to Dedicated Page -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="space-y-4 text-sm sm:text-base text-[#334E68] leading-relaxed">
+            <p class="font-cursive italic text-lg sm:text-xl text-[#026C80] font-semibold">
+              &ldquo;Hospitality is about creating experiences, while technology is about creating possibilities. And when the two come together, innovation becomes more meaningful.&rdquo;
+            </p>
+            <p>
+              Hello! Welcome to my little corner of the digital world! I am a passionate and enthusiastic 4th-year student pursuing my journey in <strong>Hospitality Management</strong>, with a growing appreciation for <strong>Information Technology</strong>, creativity, and digital innovation.
+            </p>
+            <p>
+              Holding dual <strong>TESDA National Certifications</strong> in <strong>Food and Beverage Services (NC II FBS)</strong> and <strong>Computer Systems Servicing (NC II CSS)</strong>, I bridge the warmth of human guest connection with the logic of digital tools.
+            </p>
+          </div>
+
+          <!-- Dual Superpower Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
+            <div class="p-5 rounded-xl bg-[#F4F9FB] border border-sky-100 hover:border-sky-300 transition-colors">
+              <div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-base mb-3">
+                🍽️
+              </div>
+              <h4 class="font-heading font-bold text-[#0B2540] text-sm uppercase tracking-wider mb-1">
+                The Hospitality Heart
+              </h4>
+              <p class="text-xs text-[#486581] leading-relaxed">
+                Guest empathy, banquet execution, table setup etiquette, HACCP food hygiene, and team leadership.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-[#F4F9FB] border border-sky-100 hover:border-sky-300 transition-colors">
+              <div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-base mb-3">
+                💻
+              </div>
+              <h4 class="font-heading font-bold text-[#0B2540] text-sm uppercase tracking-wider mb-1">
+                The IT Mind
+              </h4>
+              <p class="text-xs text-[#486581] leading-relaxed">
+                Hardware diagnostics, networking, and front-end development with HTML5, Tailwind CSS, &amp; JavaScript.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Read Full Story Button & CV link -->
+          <div class="pt-2 flex flex-wrap gap-3">
+            <a href="about.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0E2A47] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#071727] shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all">
+              <span>Read Full About Story</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="cv.html" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-sky-300 text-[#0B2540] text-xs font-bold uppercase tracking-wider hover:bg-sky-50 transition-all">
+              <span>View Official CV</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CASE STUDIES / FEATURED WORK ==================== -->
+  <section id="work" class="py-24 bg-[#F4F9FB]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+        <div>
+          <span class="kicker-tag">
+            <span class="kicker-square"></span>
+            <span>DESIGN &amp; DEVELOPMENT &bull; 2026</span>
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-heading font-black text-[#0B2540] tracking-tight mt-3 title-underline-accent">
+            CASE STUDIES
+          </h2>
+        </div>
+        <p class="text-sm text-[#486581] max-w-md">
+          Explore digital initiatives and operational software prototypes designed to solve real customer and banquet challenges.
+        </p>
+      </div>
+
+      <!-- Case Studies Grid (4 Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Project 1: SkinSense AI -->
+        <div class="editorial-card p-6 sm:p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between text-xs text-[#486581] mb-4">
+              <span class="font-mono-code font-bold text-sky-600 uppercase tracking-widest">Case 01 &bull; AI &amp; Web Prototype</span>
+              <span>2026</span>
+            </div>
+
+            <div class="relative h-60 w-full rounded-xl overflow-hidden bg-gradient-to-tr from-sky-100 via-sky-50 to-white mb-6 border border-sky-100 flex items-center justify-center">
+              <div class="text-center p-6 space-y-2">
+                <span class="text-4xl">✨</span>
+                <h4 class="font-heading font-black text-xl text-[#0B2540]">SkinSense AI</h4>
+                <p class="text-xs text-[#486581]">Personalized AI-Assisted Assessment Platform</p>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-heading font-bold text-[#0B2540] group-hover:text-sky-600 transition-colors mb-2">
+              SkinSense AI &bull; Smart Assessment
+            </h3>
+            <p class="text-sm text-[#486581] leading-relaxed mb-6">
+              A modern digital prototype designed to streamline user consultations. Implements interactive questionnaire workflows, personalized recommendations, and a responsive mobile-first UI.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mb-6">
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">UI/UX Design</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">Tailwind CSS</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">JavaScript</span>
+            </div>
+
+            <button onclick="openModal('skinsense')" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#0B2540] group-hover:text-sky-600 transition-colors">
+              <span>View Case Study</span>
+              <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Luxe Realty Cebu -->
+        <div class="editorial-card p-6 sm:p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between text-xs text-[#486581] mb-4">
+              <span class="font-mono-code font-bold text-sky-600 uppercase tracking-widest">Case 02 &bull; Property Portal</span>
+              <span>2026</span>
+            </div>
+
+            <div class="relative h-60 w-full rounded-xl overflow-hidden bg-gradient-to-tr from-slate-100 via-sky-50 to-white mb-6 border border-sky-100 flex items-center justify-center">
+              <div class="text-center p-6 space-y-2">
+                <span class="text-4xl">🏙️</span>
+                <h4 class="font-heading font-black text-xl text-[#0B2540]">Luxe Realty Cebu</h4>
+                <p class="text-xs text-[#486581]">High-End Resort &amp; Property Platform</p>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-heading font-bold text-[#0B2540] group-hover:text-sky-600 transition-colors mb-2">
+              Luxe Realty Cebu &bull; Real Estate
+            </h3>
+            <p class="text-sm text-[#486581] leading-relaxed mb-6">
+              A luxury property discovery web application showcasing premium hospitality villas, hotel residences, and interactive booking schedules.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mb-6">
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">Hospitality UI</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">Interactive Maps</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">Front-End</span>
+            </div>
+
+            <button onclick="openModal('luxerealty')" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#0B2540] group-hover:text-sky-600 transition-colors">
+              <span>View Case Study</span>
+              <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: Digital Guest Concierge -->
+        <div class="editorial-card p-6 sm:p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between text-xs text-[#486581] mb-4">
+              <span class="font-mono-code font-bold text-sky-600 uppercase tracking-widest">Case 03 &bull; Hospitality CX</span>
+              <span>2026</span>
+            </div>
+
+            <div class="relative h-60 w-full rounded-xl overflow-hidden bg-gradient-to-tr from-sky-50 via-cyan-50 to-white mb-6 border border-sky-100 flex items-center justify-center">
+              <div class="text-center p-6 space-y-2">
+                <span class="text-4xl">🛎️</span>
+                <h4 class="font-heading font-black text-xl text-[#0B2540]">Digital Guest Concierge</h4>
+                <p class="text-xs text-[#486581]">QR Room Dining &amp; Housekeeping Assistant</p>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-heading font-bold text-[#0B2540] group-hover:text-sky-600 transition-colors mb-2">
+              Digital Guest Concierge App
+            </h3>
+            <p class="text-sm text-[#486581] leading-relaxed mb-6">
+              A guest self-service interface that allows hotel visitors to browse dining menus, request extra linens, and schedule checkout directly from their smartphone.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mb-6">
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">F&amp;B Operations</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">QR Architecture</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">Mobile UX</span>
+            </div>
+
+            <button onclick="openModal('concierge')" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#0B2540] group-hover:text-sky-600 transition-colors">
+              <span>View Case Study</span>
+              <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4: Smart Banquet Staffing Engine -->
+        <div class="editorial-card p-6 sm:p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between text-xs text-[#486581] mb-4">
+              <span class="font-mono-code font-bold text-sky-600 uppercase tracking-widest">Case 04 &bull; TESDA NC II Algorithm</span>
+              <span>2026</span>
+            </div>
+
+            <div class="relative h-60 w-full rounded-xl overflow-hidden bg-gradient-to-tr from-sky-100 via-sky-50 to-white mb-6 border border-sky-100 flex items-center justify-center">
+              <div class="text-center p-6 space-y-2">
+                <span class="text-4xl">⚡</span>
+                <h4 class="font-heading font-black text-xl text-[#0B2540]">Smart Banquet Staffing</h4>
+                <p class="text-xs text-[#486581]">Labor &amp; Service Ratio Optimizer</p>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-heading font-bold text-[#0B2540] group-hover:text-sky-600 transition-colors mb-2">
+              Banquet Operations Engine
+            </h3>
+            <p class="text-sm text-[#486581] leading-relaxed mb-6">
+              A JavaScript-powered operations engine calculating waitstaff, banquet captains, and bartending rosters using official TESDA NC II FBS banquet ratios.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mb-6">
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">TESDA NC II FBS</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">Algorithm</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-[11px] font-bold text-sky-700">Live Simulator</span>
+            </div>
+
+            <button onclick="openModal('staffing')" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#0B2540] group-hover:text-sky-600 transition-colors">
+              <span>View Case Study</span>
+              <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== BANQUET & OPERATIONS SIMULATOR ==================== -->
+  <section id="simulator" class="py-24 bg-white border-t border-b border-sky-100">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="kicker-tag justify-center">
+          <span class="kicker-square"></span>
+          <span>INTERACTIVE TOOL &bull; TESDA NC II FBS RATIOS</span>
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-heading font-black text-[#0B2540] tracking-tight mt-3 title-underline-accent">
+          BANQUET STAFFING SIMULATOR
+        </h2>
+        <p class="text-sm text-[#486581] mt-5 leading-relaxed">
+          Test real-world hospitality formulas. Adjust guest volume and event format below to observe real-time staffing requirements.
+        </p>
+      </div>
+
+      <div class="bg-[#F4F9FB] rounded-2xl p-6 sm:p-10 border border-sky-100 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Controls Column -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label for="guest-range" class="text-xs font-bold uppercase tracking-wider text-[#0B2540]">
+                Expected Guest Count
+              </label>
+              <span id="guest-count-display" class="font-heading font-extrabold text-2xl text-sky-600">
+                250 Guests
+              </span>
+            </div>
+            <input 
+              type="range" 
+              id="guest-range" 
+              min="20" 
+              max="1000" 
+              value="250" 
+              step="10"
+              class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-500"
+            >
+            <div class="flex justify-between text-[11px] text-[#486581] mt-1 font-mono-code">
+              <span>20 (Intimate)</span>
+              <span>500 (Grand Ballroom)</span>
+              <span>1000+ (Convention)</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#0B2540] mb-3">
+              Service Style / Banquet Format
+            </label>
+            <div class="grid grid-cols-3 gap-2.5">
+              <button type="button" class="service-style-btn py-2.5 px-3 rounded-xl border border-sky-500 bg-sky-500 text-white text-xs font-bold text-center transition-all" data-style="plated">
+                Plated Fine Dining
+              </button>
+              <button type="button" class="service-style-btn py-2.5 px-3 rounded-xl border border-slate-200 bg-white text-[#334E68] text-xs font-bold text-center hover:border-sky-300 transition-all" data-style="buffet">
+                Deluxe Buffet
+              </button>
+              <button type="button" class="service-style-btn py-2.5 px-3 rounded-xl border border-slate-200 bg-white text-[#334E68] text-xs font-bold text-center hover:border-sky-300 transition-all" data-style="cocktail">
+                Cocktail Reception
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-sky-100 cursor-pointer hover:border-sky-300 transition-colors">
+              <input type="checkbox" id="digital-workflow-toggle" checked class="w-4 h-4 rounded text-sky-600 focus:ring-sky-500">
+              <div class="text-xs">
+                <span class="font-bold text-[#0B2540] block">Deploy Digital POS &amp; Table Handhelds</span>
+                <span class="text-[#486581]">Reduces required waitstaff ratio by ~18% through faster ordering</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Output Dashboard Column -->
+        <div class="lg:col-span-6 bg-white rounded-xl p-6 sm:p-8 border border-sky-100 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
+              <span class="text-xs font-bold uppercase tracking-widest text-[#486581]">Recommended Floor Crew</span>
+              <span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold">TESDA NC II Standard</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-[#F4F9FB] border border-sky-100">
+                <span class="text-xs font-bold text-[#486581] block mb-1">Waitstaff / Food Runners</span>
+                <span id="calc-servers" class="font-heading font-black text-3xl sm:text-4xl text-[#0B2540]">13</span>
+                <span class="text-[11px] text-[#486581] block mt-1">Servers on floor</span>
+              </div>
+
+              <div class="p-4 rounded-xl bg-[#F4F9FB] border border-sky-100">
+                <span class="text-xs font-bold text-[#486581] block mb-1">Bartenders &amp; Barbacks</span>
+                <span id="calc-bartenders" class="font-heading font-black text-3xl sm:text-4xl text-[#0B2540]">4</span>
+                <span class="text-[11px] text-[#486581] block mt-1">Dedicated drink stations</span>
+              </div>
+
+              <div class="p-4 rounded-xl bg-[#F4F9FB] border border-sky-100">
+                <span class="text-xs font-bold text-[#486581] block mb-1">Banquet Captains</span>
+                <span id="calc-captains" class="font-heading font-black text-3xl sm:text-4xl text-[#0B2540]">2</span>
+                <span class="text-[11px] text-[#486581] block mt-1">Supervisors</span>
+              </div>
+
+              <div class="p-4 rounded-xl bg-[#F4F9FB] border border-sky-100">
+                <span class="text-xs font-bold text-[#486581] block mb-1">Estimated Efficiency</span>
+                <span id="calc-efficiency" class="font-heading font-black text-3xl sm:text-4xl text-sky-600">96%</span>
+                <span class="text-[11px] text-[#486581] block mt-1">Optimal guest flow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#486581]">
+            <span>Formulated by <strong>Dhany Shane Rose A. Siapno</strong></span>
+            <span class="font-mono-code text-sky-600 font-bold">NC II FBS Certified</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ACADEMICS & CERTIFICATIONS ==================== -->
+  <section id="credentials" class="py-24 bg-[#F4F9FB]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="kicker-tag justify-center">
+          <span class="kicker-square"></span>
+          <span>CREDENTIALS &bull; EDUCATION &bull; SKILLS</span>
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-heading font-black text-[#0B2540] tracking-tight mt-3 title-underline-accent">
+          BACKGROUND &amp; CREDENTIALS
+        </h2>
+        <p class="text-sm text-[#486581] mt-5 leading-relaxed">
+          National technical board certifications, 4th-year university degree progress, and hands-on operational competencies.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Credential 1 -->
+        <div class="editorial-card p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xl mb-6">
+              🎓
+            </div>
+            <span class="text-xs font-mono-code font-bold uppercase tracking-widest text-sky-600 block mb-1">
+              Tertiary Degree &bull; 4th Year Senior
+            </span>
+            <h3 class="text-xl font-heading font-bold text-[#0B2540] mb-3">
+              B.S. in Hospitality Management (BSHM)
+            </h3>
+            <p class="text-xs text-[#486581] leading-relaxed mb-4">
+              Currently completing 4th-year senior coursework. Specializing in Hotel &amp; Restaurant Operations, Banquet Management, Guest Experience Management, and Hospitality Information Systems.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] font-bold text-[#0B2540]">
+            Graduating Class of 2026
+          </div>
+        </div>
+
+        <!-- Credential 2 -->
+        <div class="editorial-card p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xl mb-6">
+              🏆
+            </div>
+            <span class="text-xs font-mono-code font-bold uppercase tracking-widest text-sky-600 block mb-1">
+              National Certification II &bull; TESDA
+            </span>
+            <h3 class="text-xl font-heading font-bold text-[#0B2540] mb-3">
+              Food &amp; Beverage Services (NC II FBS)
+            </h3>
+            <p class="text-xs text-[#486581] leading-relaxed mb-4">
+              Certified in professional dining room service, French/American/Russian table setup, wine &amp; beverage service, banquet event coordination, and hygiene &amp; food safety compliance.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] font-bold text-[#0B2540]">
+            TESDA Board Certified
+          </div>
+        </div>
+
+        <!-- Credential 3 -->
+        <div class="editorial-card p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xl mb-6">
+              ⚡
+            </div>
+            <span class="text-xs font-mono-code font-bold uppercase tracking-widest text-sky-600 block mb-1">
+              National Certification II &bull; TESDA
+            </span>
+            <h3 class="text-xl font-heading font-bold text-[#0B2540] mb-3">
+              Computer Systems Servicing (NC II CSS)
+            </h3>
+            <p class="text-xs text-[#486581] leading-relaxed mb-4">
+              Certified in PC hardware assembly, BIOS configuration, OS installation (Windows/Linux), LAN network cabling &amp; router setups, computer maintenance, and IT security protocols.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] font-bold text-[#0B2540]">
+            TESDA Board Certified
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS SECTION ==================== -->
+  <section id="testimonials" class="py-24 bg-white border-t border-b border-sky-100">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="kicker-tag justify-center">
+          <span class="kicker-square"></span>
+          <span>ENDORSEMENTS &bull; COLLABORATION</span>
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-heading font-black text-[#0B2540] tracking-tight mt-3 title-underline-accent">
+          WHAT THEY SAY
+        </h2>
+        <p class="text-sm text-[#486581] mt-5 leading-relaxed">
+          Feedback from hospitality mentors, event coordinators, and academic instructors.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="editorial-card p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-sky-400 text-3xl font-serif mb-4">&ldquo;</div>
+            <p class="text-sm text-[#334E68] leading-relaxed italic mb-6">
+              Dhany brings a calm, thorough approach to both banquet dining rooms and technical setups. Her ability to translate hospitality needs into digital prototypes is rare and inspiring.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">
+              MC
+            </div>
+            <div>
+              <h4 class="font-heading font-bold text-xs text-[#0B2540]">Maria Christine Santos</h4>
+              <p class="text-[11px] text-[#486581]">F&amp;B Operations Trainer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="editorial-card p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-sky-400 text-3xl font-serif mb-4">&ldquo;</div>
+            <p class="text-sm text-[#334E68] leading-relaxed italic mb-6">
+              Holding both NC II FBS and NC II CSS is a remarkable testament to her dedication. She solves problems with empathy and precision.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">
+              RG
+            </div>
+            <div>
+              <h4 class="font-heading font-bold text-xs text-[#0B2540]">Engr. Roberto Garcia</h4>
+              <p class="text-[11px] text-[#486581]">IT Instructor &amp; Assessor</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="editorial-card p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-sky-400 text-3xl font-serif mb-4">&ldquo;</div>
+            <p class="text-sm text-[#334E68] leading-relaxed italic mb-6">
+              Her passion for crafting guest experiences beyond expectations shines through in her design work, communication, and event execution.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">
+              AL
+            </div>
+            <div>
+              <h4 class="font-heading font-bold text-xs text-[#0B2540]">Aileen Lorenzo</h4>
+              <p class="text-[11px] text-[#486581]">Hospitality Department Chair</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER / CONTACT SECTION ==================== -->
+  <footer id="contact" class="bg-[#071727] text-white py-20 border-t border-sky-900/40">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between pb-16 border-b border-slate-800 gap-8">
+        <div>
+          <span class="text-xs font-mono-code font-bold uppercase tracking-widest text-sky-400 block mb-2">
+            START A CONVERSATION
+          </span>
+          <h2 class="text-4xl sm:text-6xl font-heading font-black tracking-tight text-white">
+            LET'S WORK TOGETHER
+          </h2>
+          <p class="text-sm text-slate-400 mt-2 max-w-lg">
+            Open to hotel internships, hospitality tech roles, web development collaboration, and guest experience projects.
+          </p>
+        </div>
+
+        <a 
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-16 h-16 rounded-full bg-sky-400 hover:bg-sky-300 text-[#071727] flex items-center justify-center text-2xl shadow-lg shadow-sky-400/30 transform hover:scale-110 transition-all shrink-0"
+          title="Compose Email in Gmail"
+        >
+          ✉
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 py-12 border-b border-slate-800 text-xs">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center space-x-2">
+            <span class="font-heading text-2xl font-bold text-white">
+              ds<span class="text-sky-400">✦</span>
+            </span>
+            <span class="text-slate-400 font-semibold tracking-wider uppercase text-[11px]">
+              &bull; Dhany Shane Rose A. Siapno
+            </span>
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-sm">
+            4th-Year Hospitality Management Senior exploring front-end web tools and computer systems servicing.
+          </p>
+          <div class="pt-2">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" target="_blank" rel="noopener noreferrer" class="text-sm sm:text-base font-bold text-sky-300 hover:text-white underline transition-colors">
+              zhuxieblahblah@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold uppercase tracking-wider text-slate-300">Menu</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#hero" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors text-sky-400 font-bold">About Dhany &nearr;</a></li>
+            <li><a href="#work" class="hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="#simulator" class="hover:text-white transition-colors">Operations Simulator</a></li>
+            <li><a href="#credentials" class="hover:text-white transition-colors">Credentials</a></li>
+            <li><a href="cv.html" target="_blank" class="hover:text-white text-sky-400 font-semibold transition-colors">Curriculum Vitae &nearr;</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-5">
+          <div>
+            <h4 class="font-heading font-bold uppercase tracking-wider text-slate-300 mb-2">Connect</h4>
+            <ul class="space-y-1.5 text-slate-400">
+              <li>
+                <a href="https://github.com/Yooxowie" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+                  <span>GitHub &bull; Yooxowie</span>
+                  <span class="text-sky-400 text-xs">&nearr;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+                  <span>LinkedIn Feed / Profile</span>
+                  <span class="text-sky-400 text-xs">&nearr;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zhuxieblahblah@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+                  <span>zhuxieblahblah@gmail.com</span>
+                  <span class="text-sky-400 text-xs">&nearr;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Philippine Time (PHT)</span>
+            </div>
+            <div id="live-pht-clock" class="font-mono-code text-xl font-bold text-sky-400">
+              --:--:-- PM PHT
+            </div>
+            <span class="text-[10px] text-slate-400 block mt-0.5">Manila, Philippines (GMT+8)</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-3">
+        <div>
+          &copy; <span id="current-year">2026</span> Dhany Shane Rose A. Siapno. All rights reserved.
+        </div>
+        <div class="text-center sm:text-right font-cursive italic text-sky-300 text-xs">
+          HM heart, IT mind &mdash; creating experiences beyond expectations. &#9825;
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== CASE STUDY MODAL ==================== -->
+  <div id="case-study-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div id="modal-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-xs"></div>
+
+    <div class="relative bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl z-10 p-6 sm:p-8 border border-sky-100">
+      <button id="modal-close-btn" class="absolute top-4 right-4 w-9 h-9 bg-slate-100 hover:bg-slate-200 text-[#0B2540] rounded-full flex items-center justify-center font-bold">
+        ✕
+      </button>
+
+      <div class="relative h-56 w-full overflow-hidden rounded-xl bg-sky-50 mb-6 border border-sky-100 flex items-center justify-center">
+        <div class="text-center p-6">
+          <span id="modal-icon" class="text-5xl block mb-2">✨</span>
+          <h4 id="modal-badge-title" class="font-heading font-black text-xl text-[#0B2540]">Case Preview</h4>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <span id="modal-category" class="text-xs font-bold text-sky-600 uppercase tracking-widest block mb-1">Category</span>
+          <h3 id="modal-title" class="text-2xl font-heading font-bold text-[#0B2540] mb-2">Title</h3>
+          <p id="modal-desc" class="text-sm text-[#486581] leading-relaxed">Description</p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#486581] mb-2">Key Highlights</h4>
+          <ul id="modal-points" class="space-y-2"></ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#486581] mb-2">Technologies Used</h4>
+          <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div class="pt-6 border-t border-slate-100 flex justify-end">
+          <button onclick="document.getElementById('modal-close-btn').click()" class="px-6 py-2.5 rounded-full bg-[#0E2A47] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#071727] transition-all">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lucide Init & Year -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
